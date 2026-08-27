@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11111f">
+
+  <title>For Aeesha Bella ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="stars"></div>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <main class="app">
+
+    <!-- INTRO -->
+    <section class="screen active" id="intro">
+
+      <div class="tiny-label">A LITTLE SOMETHING FOR YOU</div>
+
+      <div class="mystery-icon">♡</div>
+
+      <h1>
+        Someone with a<br>
+        <span>very good heart</span>
+      </h1>
+
+      <p>
+        has been detected...
+      </p>
+
+      <button class="main-btn" onclick="goTo('reveal')">
+        Find out who
+        <span>→</span>
+      </button>
+
+      <div class="bottom-note">
+        Don't overthink it 😂
+      </div>
+
+    </section>
+
+
+    <!-- REVEAL -->
+    <section class="screen" id="reveal">
+
+      <div class="reveal-small">THE PERSON IN QUESTION IS...</div>
+
+      <div class="name-box">
+        <div class="crown">✦</div>
+
+        <h2>Olajumoke<br>Aisha</h2>
+
+        <div class="nickname">aeesha_bella</div>
+      </div>
+
+      <p class="reveal-text">
+        Yep.<br>
+        <strong>It's you. 😂❤️</strong>
+      </p>
+
+      <button class="main-btn" onclick="goTo('game')">
+        Okay, continue
+        <span>→</span>
+      </button>
+
+    </section>
+
+
+    <!-- GAME -->
+    <section class="screen" id="game">
+
+      <div class="tiny-label">HEART CHECK</div>
+
+      <h2 class="section-title">
+        One important question...
+      </h2>
+
+      <p class="question">
+        Do you agree that you have<br>
+        <span>a beautiful heart?</span>
+      </p>
+
+      <button class="heart-button" id="heartButton" onclick="heartCheck()">
+        <span>♡</span>
+      </button>
+
+      <p class="tap-hint" id="tapHint">
+        Tap the heart 👆
+      </p>
+
+      <button class="next-btn hidden" id="gameNext" onclick="goTo('cards')">
+        I agree 😂 →
+      </button>
+
+    </section>
+
+
+    <!-- CARDS -->
+    <section class="screen" id="cards">
+
+      <div class="tiny-label">A FEW THINGS ABOUT YOU</div>
+
+      <h2 class="section-title">
+        Pick a card.
+      </h2>
+
+      <p class="subtext">
+        There are no wrong answers. Just little reminders. ❤️
+      </p>
+
+      <div class="card-grid">
+
+        <button class="memory-card" onclick="openCard('heart')">
+          <span>♡</span>
+          <strong>Good Heart</strong>
+          <small>Tap me</small>
+        </button>
+
+        <button class="memory-card" onclick="openCard('kind')">
+          <span>✿</span>
+          <strong>Kindness</strong>
+          <small>Tap me</small>
+        </button>
+
+        <button class="memory-card" onclick="openCard('beauty')">
+          <span>✦</span>
+          <strong>Beautiful Soul</strong>
+          <small>Tap me</small>
+        </button>
+
+        <button class="memory-card" onclick="openCard('sister')">
+          <span>♕</span>
+          <strong>Big Sister</strong>
+          <small>Tap me</small>
+        </button>
+
+      </div>
+
+      <div class="card-message" id="cardMessage"></div>
+
+      <button class="next-btn hidden" id="cardsNext" onclick="goTo('serious')">
+        Okay... now the serious part →
+      </button>
+
+    </section>
+
+
+    <!-- SERIOUS -->
+    <section class="screen" id="serious">
+
+      <div class="tiny-label">NO JOKES FOR A MOMENT</div>
+
+      <div class="letter-line"></div>
+
+      <h2 class="section-title">
+        Okay...
+        <br>
+        <span>jokes aside.</span>
+      </h2>
+
+      <div class="letter">
+
+        <p>
+          Aisha, I don't always say these things,
+          but I genuinely appreciate you.
+        </p>
+
+        <p>
+          You have such a <strong>good heart</strong>,
+          and that's something that makes you different.
+          The way you care, the way you show kindness,
+          and simply the person you are...
+          it doesn't go unnoticed.
+        </p>
+
+        <p>
+          You're beautiful, yes —
+          but there's something even more beautiful
+          about the person you are inside.
+        </p>
+
+        <p>
+          I'm genuinely grateful to have you as my
+          <strong>big sister</strong>.
+        </p>
+
+      </div>
+
+      <button class="main-btn" onclick="goTo('final')">
+        One last thing...
+        <span>→</span>
+      </button>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="screen final-screen" id="final">
+
+      <div class="final-stars">✦　·　✦　·　✦</div>
+
+      <div class="final-heart">♡</div>
+
+      <p class="final-intro">
+        Some people are blessings
+        you don't always know how to explain.
+      </p>
+
+      <h2>
+        For me,<br>
+        <span>you're one of them.</span>
+      </h2>
+
+      <div class="final-line"></div>
+
+      <p class="final-message">
+        Thank you for being you.<br>
+        Thank you for your good heart.<br>
+        Thank you for being my big sister.
+      </p>
+
+      <div class="signature">
+        With love,
+        <strong>Olajideh 🦋</strong>
+      </div>
+
+      <button class="restart" onclick="restart()">
+        Read it again ↻
+      </button>
+
+    </section>
+
+  </main>
+
+  <!-- Card popup -->
+  <div class="modal" id="modal">
+
+    <div class="modal-box">
+
+      <button class="close-modal" onclick="closeCard()">×</button>
+
+      <div class="modal-icon" id="modalIcon">♡</div>
+
+      <h3 id="modalTitle">Good Heart</h3>
+
+      <p id="modalText"></p>
+
+      <button class="main-btn small-btn" onclick="closeCard()">
+        Aww okay ❤️
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
